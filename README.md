@@ -1,9 +1,5 @@
 # TwinCache
 
-TwinCache is a region-based cache for RAG serving. It reuses cached document candidates, combines nearest-query evidence with historical reranking and embedding similarity, and applies priority-guided reranking with optional early stopping. Low-confidence semantic hits fall back to database retrieval. The service supports CPU IVF and GPU Flat or IVF retrieval and remote vLLM embedding, reranker and generation endpoints.
-
-This source distribution includes the serving implementation, portable launch and index-preparation tools, and small CPU-only regression tests. It does not include datasets, model weights, experiment logs, plots, third-party baselines, or historical benchmark drivers. See [the architecture and parameters](docs/architecture.md) for the execution path and configuration details.
-
 ## Installation
 
 Python 3.10 or newer is required. Run installation commands from this source directory. Install FAISS separately for GPU retrieval; do not install CPU and GPU FAISS into the same environment.
